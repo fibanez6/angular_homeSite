@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="follow, all">
+    <meta name="language" content="en">
+    <meta name="keywords" content="fibanez.com, angular, node, project">
+    <meta name="author" content="fibanez">
+    <title>Fibanez.com</title>
+    <meta name="description" content="fibanez.com website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="static/img/favicon.png">
+    <link rel="stylesheet" href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" type="text/css">
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">-->
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">-->
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">-->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">-->
+
+    <!-- In production use: -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lobster' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+
+    <!-- Dev -->
+    <!--<link rel="stylesheet" href="static/css/app.css">-->
+    <!--<link rel="stylesheet" href="static/css/animations.css">-->
+    <!--<link rel="stylesheet" href="static/css/logo_animation.css">-->
+    <!--<script src="bower_components/jquery/dist/jquery.js"></script>-->
+    <!--<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>-->
+
+</head>
+<body ng-controller="LocationController">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--<div>-->
+        <!--$location.protocol() = <span ng-bind="$location.protocol()"></span> <br>-->
+        <!--$location.host() = <span ng-bind="$location.host()"></span> <br>-->
+        <!--$location.port() = <span ng-bind="$location.port()"></span> <br>-->
+        <!--$location.path() = <span ng-bind="$location.path()"></span> <br>-->
+        <!--$location.search() = <span ng-bind="$location.search()"></span> <br>-->
+        <!--$location.hash() = <span ng-bind="$location.hash()"></span> <br>-->
+    <!--</div>-->
+
+    <div ng-class="($location.path() === '/' || $location.path() === '') ? 'cover' : ''" ui-view="viewHeader"></div>
+    <div id="view" ui-view="viewContainer" autoscroll="false"></div>
+
+    <footer class="section-primary" ng-sticky-footer="($location.path() !== '/' && $location.path() !== '')"
+            ng-style="footer" ng-include src="'views/partials/footer.html'"></footer>
+
+    <!-- In production use: -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript"-->
+            <!--src="https://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22feeds%22%2C%22version%22%3A%221.0%22%2C%22nocss%22%3Atrue%7D%5D%7D"></script>-->
+    <!--<script src="bower_components/angular-feeds/app/angular-feeds/angular-feeds.js"></script>-->
+
+    <!--<script src="dist/js/services.min.js"></script>-->
+    <!--<script src="dist/js/directives.min.js"></script>-->
+    <!--<script src="dist/js/controllers.min.js"></script>-->
+
+
+    <!-- dev -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript"
+            src="https://www.google.com/jsapi?autoload=%7B%22modules%22%3A%5B%7B%22name%22%3A%22feeds%22%2C%22version%22%3A%221.0%22%2C%22nocss%22%3Atrue%7D%5D%7D"></script>
+    <script src="bower_components/angular-feeds/app/angular-feeds/angular-feeds.js"></script>
+
+    <script src="dist/js/directives.min.js"></script>
+    <script src="dist/js/controllers.min.js"></script>
+
+
+    <!--<script src="directives/ng-no-sticky-footer.js"></script>-->
+    <!--<script src="views/feeder/feeder_controller.js"></script>-->
+
+
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="app.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60018606-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "id": "nodejs",
+  "name": "NodeJs",
+  "description": "Nodejs projects",
+  "imageUrl": "",
+  "websiteUrl": "",
+  "projects" : [
+    {
+      "id": "AlbumPhotos",
+      "name":"Album photos",
+      "description":"Album photos",
+      "imageUrl":"static/img/Nodejs_logo.png",
+      "websiteUrl":"http://nodejs.fibanez.com/albums",
+      "version":"",
+      "created_date" :"",
+      "updated_date" :"",
+      "tags" : []
+    }
+  ]
+}

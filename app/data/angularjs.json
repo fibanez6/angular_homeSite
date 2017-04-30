@@ -1,0 +1,31 @@
+{
+  "id": "angular",
+  "name": "Angular",
+  "description": "Angular projects",
+  "imageUrl": "",
+  "websiteUrl": "/angular",
+  "projects" : [
+    {
+      "id": "homepage",
+      "name":"Home Page",
+      "description":"Home page",
+      "imageUrl":"static/img/fibanez_home_page.png",
+      "websiteUrl":"http://www.fibanez.com",
+      "version":"",
+      "created_date" :"",
+      "updated_date" :"",
+      "tags" : []
+    },
+    {
+      "id": "flickrSearch",
+      "name":"Flickr Search",
+      "description":"A simple Flickr Search",
+      "imageUrl":"https://goo.gl/DZ60tR",
+      "websiteUrl":"http://angular.fibanez.com/flickrSearch/#/",
+      "version":"0.0.1",
+      "created_date" :"03/01/2016",
+      "updated_date" :"03/01/2016",
+      "tags" : ["flickr", "search"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <!--Sidebar content-->
+            <div class="form-group">
+                <label for="search">Search:</label>
+                <input id="search" ng-model="query">
+            </div>
+            <div class="form-group">
+                <label for="sortby">Sort by:</label>
+                <select id="sortby" ng-model="orderProp">
+                    <option value="name">Alphabetical</option>
+                    <option value="created_date">Creation</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-3 vcenter" ng-repeat="project in data.projects | filter:query | orderBy:orderProp" >
+            <div>
+                <a href="{{project.websiteUrl}}"><img ng-src="{{project.imageUrl}}" class="img-responsive"></a>
+            </div>
+            <a href="{{project.websiteUrl}}"><h2>{{project.name}}</h2></a>
+            <p>{{data.name}}</p>
+            <p>{{project.description}}</p>
+        </div>
+    </div>
+</div>

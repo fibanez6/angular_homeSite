@@ -1,0 +1,20 @@
+{
+  "id": "django",
+  "name": "Django",
+  "description": "Django projects",
+  "imageUrl": "",
+  "websiteUrl": "",
+  "projects" : [
+    {
+      "id": "blog",
+      "name":"Blog",
+      "description":"Blog",
+      "imageUrl":"static/img/Django_logo.png",
+      "websiteUrl":"http://blog.fibanez.com",
+      "version":"",
+      "created_date" :"",
+      "updated_date" :"",
+      "tags" : []
+    }
+  ]
+}
