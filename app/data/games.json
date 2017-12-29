@@ -15,6 +15,17 @@
       "created_date" :"",
       "updated_date" :"",
       "tags" : []
+    },
+    {
+      "id": "space_shooter",
+      "name": "Space Shooter",
+      "description": "Top down space arcade style shooter",
+      "imageUrl":"static/img/u3d_ScapeShooter.jpg",
+      "websiteUrl": "http://fibanez.com:8000/Space_Shooter/index.html",
+      "version":"",
+      "created_date" :"",
+      "updated_date" :"",
+      "tags" : []
     }
   ]
 }
