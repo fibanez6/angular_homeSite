@@ -11,10 +11,10 @@
       "description": "Simple rolling ball game",
       "imageUrl":"static/img/u3d_RollABall.png",
       "websiteUrl": "http://games.fibanez.com/Roll_a_ball_html5/index.html",
-      "version":"",
-      "created_date" :"",
-      "updated_date" :"",
-      "tags" : []
+      "version":"1.0.0",
+      "created_date" :"30/05/2015",
+      "updated_date" :"30/05/2015",
+      "tags" : ["unity3d","game"]
     },
     {
       "id": "space_shooter",
@@ -22,10 +22,10 @@
       "description": "Top down space arcade style shooter",
       "imageUrl":"static/img/u3d_ScapeShooter.png",
       "websiteUrl": "http://games.fibanez.com/Space_Shooter/index.html",
-      "version":"",
-      "created_date" :"",
-      "updated_date" :"",
-      "tags" : []
+      "version":"1.0.0",
+      "created_date" :"30/12/2017",
+      "updated_date" :"30/12/2017",
+      "tags" : ["unity3d","game"]
     }
   ]
 }
